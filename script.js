@@ -16,14 +16,14 @@ const songs = [
   {
     title: 'Lost in the City Lights',
     artist: 'Cosmo Sheldrake',
-    src: '/songs/lost-in-city-lights-145038.mp3',
-    image: '/images/cover-1.png',
+    src: './songs/lost-in-city-lights-145038.mp3',
+    image: './images/cover-1.png',
   },
   {
     title: 'Forest Lullaby',
     artist: 'Lesfm',
-    src: '/songs/forest-lullaby-110624.mp3',
-    image: '/images/cover-2.png',
+    src: './songs/forest-lullaby-110624.mp3',
+    image: './images/cover-2.png',
   },
 ];
 
