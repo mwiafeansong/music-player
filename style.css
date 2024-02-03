@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background-image: url('images/bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #21293699;
+  max-width: 350px;
+  width: 90%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.title {
+  color: #e5e7eb;
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px 0 10px 0;
+}
+
+.artist {
+  color: #4d5562;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.play-area {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.timestamps {
+  color: #4d5562;
+  font-size: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress {
+  height: inherit;
+  border-radius: inherit;
+  background-color: #c93b76;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.controls button {
+  cursor: pointer;
+}
+
+.audio-control {
+  background-color: transparent;
+  border: none;
+}
+
+.play-pause {
+  background-color: #c93b76;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px #c93b76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play,
+.pause {
+  position: absolute;
+}
+
+.pause {
+  width: 10px;
+  visibility: hidden;
+}
+
+.play-pause.playing .pause {
+  visibility: visible;
+}
+
+.play-pause.playing .play {
+  visibility: hidden;
+}
+
+footer {
+  position: absolute;
+  font-size: 0.7rem;
+  top: 105vh;
+  bottom: 0;
+  color: #4d5562;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+footer a:hover {
+  color: #e5e7eb;
+}
